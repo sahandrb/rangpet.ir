@@ -958,6 +958,50 @@
         gap: 10px;
       }
     }
+   /* 🔧 اصلاحات نسخه موبایل و رفع اسکرول افقی */
+
+/* جلوگیری از اسکرول افقی کل صفحه */
+html, body {
+  overflow-x: hidden;
+}
+
+/* محدود کردن عرض همه‌ی تصاویر */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* اطمینان از گرید یک‌ستونه در موبایل */
+@media (max-width: 968px) {
+  .content-with-sidebar {
+    grid-template-columns: 1fr !important;
+    gap: 0 !important;
+  }
+}
+
+/* جلوگیری از بیرون زدن منوی ناوبری */
+nav, .nav-container {
+  overflow-x: hidden;
+}
+
+/* رفع احتمال بیرون‌زدگی در عناصر داخلی (در بعضی مرورگرهای موبایل) */
+.container {
+  max-width: 100% !important;
+  overflow-x: hidden;
+}
+
+/* اطمینان از اینکه عناصر Flex/Grid کوچیک‌تر از عرض صفحه نزن */
+* {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* برای اطمینان بیشتر از رفتار واکنش‌گرا */
+.featured-article, .articles-grid, .footer-content {
+  overflow-x: hidden;
+}
+
   </style>
   <style>@view-transition { navigation: auto; }</style>
   <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
