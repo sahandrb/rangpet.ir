@@ -4,9 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Animal Research News</title>
-<script src="https://cdn.example.com/element_sdk.js"></script>
-<script src="https://cdn.example.com/data_sdk.js"></script>
-
+  <script src="/_sdk/element_sdk.js"></script>
   <style>
         * {
             margin: 0;
@@ -126,60 +124,6 @@
             font-size: 1em;
             color: #666666;
             line-height: 1.7;
-            margin-bottom: 15px;
-        }
-
-        /* Article Stats */
-        .article-stats {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            margin-top: 15px;
-            padding-top: 15px;
-            border-top: 1px solid #e0e0e0;
-            font-size: 0.9em;
-            color: #888888;
-        }
-
-        .stat-item {
-            display: flex;
-            align-items: center;
-            gap: 5px;
-        }
-
-        .star-rating {
-            display: flex;
-            gap: 2px;
-        }
-
-        .star {
-            color: #ddd;
-            font-size: 1.1em;
-        }
-
-        .star.filled {
-            color: #ffc107;
-        }
-
-        .like-button {
-            background: none;
-            border: none;
-            cursor: pointer;
-            font-size: 1.2em;
-            padding: 0;
-            transition: transform 0.2s;
-        }
-
-        .like-button:hover {
-            transform: scale(1.2);
-        }
-
-        .like-button.liked {
-            color: #e74c3c;
-        }
-
-        .like-button:not(.liked) {
-            color: #ddd;
         }
 
         /* Article Detail Page */
@@ -255,157 +199,6 @@
             background-color: #444444;
         }
 
-        /* Comments Section */
-        .comments-section {
-            margin-top: 60px;
-            padding-top: 40px;
-            border-top: 2px solid #e0e0e0;
-        }
-
-        .comments-title {
-            font-size: 1.8em;
-            color: #2c2c2c;
-            margin-bottom: 30px;
-        }
-
-        .rating-section {
-            background-color: #fafafa;
-            padding: 30px;
-            border-radius: 8px;
-            margin-bottom: 40px;
-        }
-
-        .rating-title {
-            font-size: 1.2em;
-            color: #2c2c2c;
-            margin-bottom: 15px;
-        }
-
-        .rating-stars {
-            display: flex;
-            gap: 10px;
-            margin-bottom: 20px;
-        }
-
-        .rating-star {
-            font-size: 2em;
-            cursor: pointer;
-            color: #ddd;
-            transition: color 0.2s;
-        }
-
-        .rating-star:hover,
-        .rating-star.active {
-            color: #ffc107;
-        }
-
-        .comment-form {
-            background-color: #fafafa;
-            padding: 30px;
-            border-radius: 8px;
-            margin-bottom: 40px;
-        }
-
-        .form-group {
-            margin-bottom: 20px;
-        }
-
-        .form-group label {
-            display: block;
-            font-size: 1em;
-            color: #2c2c2c;
-            margin-bottom: 8px;
-            font-weight: bold;
-        }
-
-        .form-group input,
-        .form-group textarea {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            font-family: inherit;
-            font-size: 1em;
-        }
-
-        .form-group textarea {
-            min-height: 120px;
-            resize: vertical;
-        }
-
-        .submit-button {
-            background-color: #2c2c2c;
-            color: #ffffff;
-            padding: 12px 30px;
-            border: none;
-            border-radius: 4px;
-            font-size: 1em;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        .submit-button:hover {
-            background-color: #444444;
-        }
-
-        .submit-button:disabled {
-            background-color: #ccc;
-            cursor: not-allowed;
-        }
-
-        .comments-list {
-            margin-top: 40px;
-        }
-
-        .comment-item {
-            background-color: #fafafa;
-            padding: 20px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-        }
-
-        .comment-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 10px;
-        }
-
-        .comment-author {
-            font-weight: bold;
-            color: #2c2c2c;
-        }
-
-        .comment-date {
-            font-size: 0.85em;
-            color: #888888;
-        }
-
-        .comment-rating {
-            display: flex;
-            gap: 3px;
-            margin-bottom: 10px;
-        }
-
-        .comment-text {
-            color: #444444;
-            line-height: 1.7;
-        }
-
-        .loading-message {
-            text-align: center;
-            padding: 20px;
-            color: #888888;
-        }
-
-        .error-message {
-            background-color: #fee;
-            color: #c33;
-            padding: 15px;
-            border-radius: 4px;
-            margin-bottom: 20px;
-        }
-
         /* Footer */
         footer {
             background-color: #2c2c2c;
@@ -455,11 +248,6 @@
                 font-size: 1.2em;
             }
 
-            .article-stats {
-                flex-wrap: wrap;
-                gap: 10px;
-            }
-
             .article-detail-title {
                 font-size: 1.7em;
             }
@@ -470,14 +258,6 @@
 
             .article-content h2 {
                 font-size: 1.4em;
-            }
-
-            .rating-stars {
-                gap: 5px;
-            }
-
-            .rating-star {
-                font-size: 1.5em;
             }
 
             header {
@@ -510,11 +290,6 @@
                 padding: 10px 20px;
                 font-size: 0.95em;
             }
-
-            .comment-form,
-            .rating-section {
-                padding: 20px;
-            }
         }
 
         .hidden {
@@ -522,6 +297,7 @@
         }
     </style>
   <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
   <script src="https://cdn.tailwindcss.com" type="text/javascript"></script>
  </head>
  <body><!-- Header -->
@@ -543,25 +319,7 @@
      <div class="articles-grid" id="articlesGrid"></div>
     </div><!-- Article Detail Page -->
     <div id="articleDetailPage" class="hidden"><button class="back-button" id="backButton">← بازگشت به فهرست مقالات</button>
-     <article class="article-detail" id="articleDetail"></article><!-- Comments Section -->
-     <div class="comments-section">
-      <h2 class="comments-title">نظرات و امتیازها</h2><!-- Rating Section -->
-      <div class="rating-section">
-       <h3 class="rating-title">امتیاز شما به این مقاله:</h3>
-       <div class="rating-stars" id="ratingStars"><span class="rating-star" data-rating="1">★</span> <span class="rating-star" data-rating="2">★</span> <span class="rating-star" data-rating="3">★</span> <span class="rating-star" data-rating="4">★</span> <span class="rating-star" data-rating="5">★</span>
-       </div>
-      </div><!-- Comment Form -->
-      <div class="comment-form">
-       <form id="commentForm">
-        <div class="form-group"><label for="authorName">نام شما:</label> <input type="text" id="authorName" required placeholder="نام خود را وارد کنید">
-        </div>
-        <div class="form-group"><label for="commentText">نظر شما:</label> <textarea id="commentText" required placeholder="نظر خود را بنویسید..."></textarea>
-        </div><button type="submit" class="submit-button" id="submitButton">ارسال نظر</button>
-       </form>
-       <div id="formError" class="error-message hidden"></div>
-      </div><!-- Comments List -->
-      <div class="comments-list" id="commentsList"></div>
-     </div>
+     <article class="article-detail" id="articleDetail"></article>
     </div>
    </div>
   </main><!-- Footer -->
@@ -656,74 +414,6 @@
         ];
 
         let currentArticle = null;
-        let allComments = [];
-        let selectedRating = 0;
-        let articleViews = {};
-        let articleLikes = {};
-
-        // Initialize views and likes from localStorage
-        function initializeStats() {
-            const savedViews = localStorage.getItem('articleViews');
-            const savedLikes = localStorage.getItem('articleLikes');
-            
-            if (savedViews) {
-                articleViews = JSON.parse(savedViews);
-            } else {
-                articles.forEach(article => {
-                    articleViews[article.id] = Math.floor(Math.random() * 500) + 100;
-                });
-                localStorage.setItem('articleViews', JSON.stringify(articleViews));
-            }
-            
-            if (savedLikes) {
-                articleLikes = JSON.parse(savedLikes);
-            } else {
-                articles.forEach(article => {
-                    articleLikes[article.id] = {
-                        count: Math.floor(Math.random() * 50) + 10,
-                        liked: false
-                    };
-                });
-                localStorage.setItem('articleLikes', JSON.stringify(articleLikes));
-            }
-        }
-
-        function incrementViews(articleId) {
-            articleViews[articleId] = (articleViews[articleId] || 0) + 1;
-            localStorage.setItem('articleViews', JSON.stringify(articleViews));
-        }
-
-        function toggleLike(articleId) {
-            if (!articleLikes[articleId]) {
-                articleLikes[articleId] = { count: 0, liked: false };
-            }
-            
-            if (articleLikes[articleId].liked) {
-                articleLikes[articleId].count--;
-                articleLikes[articleId].liked = false;
-            } else {
-                articleLikes[articleId].count++;
-                articleLikes[articleId].liked = true;
-            }
-            
-            localStorage.setItem('articleLikes', JSON.stringify(articleLikes));
-            renderArticlesList();
-        }
-
-        function getAverageRating(articleId) {
-            const articleComments = allComments.filter(c => c.article_id === articleId && c.rating > 0);
-            if (articleComments.length === 0) return 0;
-            const sum = articleComments.reduce((acc, c) => acc + c.rating, 0);
-            return (sum / articleComments.length).toFixed(1);
-        }
-
-        function renderStars(rating) {
-            let starsHtml = '';
-            for (let i = 1; i <= 5; i++) {
-                starsHtml += `<span class="star ${i <= rating ? 'filled' : ''}">★</span>`;
-            }
-            return starsHtml;
-        }
 
         function renderArticlesList() {
             const grid = document.getElementById('articlesGrid');
@@ -732,51 +422,15 @@
             articles.forEach(article => {
                 const card = document.createElement('div');
                 card.className = 'article-card';
-                
-                const avgRating = getAverageRating(article.id);
-                const views = articleViews[article.id] || 0;
-                const likes = articleLikes[article.id] || { count: 0, liked: false };
-                const commentsCount = allComments.filter(c => c.article_id === article.id).length;
+                card.onclick = () => showArticle(article.id);
                 
                 card.innerHTML = `
-                    <img src="${article.image}" alt="${article.title}">
+                    <img src="${article.image}" alt="${article.title}" onerror="this.src=''; this.alt='تصویر در دسترس نیست'; this.style.display='none';">
                     <div class="article-card-content">
                         <h3 class="article-card-title">${article.title}</h3>
                         <p class="article-card-excerpt">${article.excerpt}</p>
-                        <div class="article-stats">
-                            <div class="stat-item">
-                                <div class="star-rating">${renderStars(Math.round(avgRating))}</div>
-                                <span>${avgRating > 0 ? avgRating : 'بدون امتیاز'}</span>
-                            </div>
-                            <div class="stat-item">
-                                👁️ ${views}
-                            </div>
-                            <div class="stat-item">
-                                <button class="like-button ${likes.liked ? 'liked' : ''}" data-article-id="${article.id}">
-                                    ❤️
-                                </button>
-                                <span>${likes.count}</span>
-                            </div>
-                            <div class="stat-item">
-                                💬 ${commentsCount}
-                            </div>
-                        </div>
                     </div>
                 `;
-                
-                // Add click handler for card (except like button)
-                card.addEventListener('click', (e) => {
-                    if (!e.target.classList.contains('like-button')) {
-                        showArticle(article.id);
-                    }
-                });
-                
-                // Add click handler for like button
-                const likeBtn = card.querySelector('.like-button');
-                likeBtn.addEventListener('click', (e) => {
-                    e.stopPropagation();
-                    toggleLike(article.id);
-                });
                 
                 grid.appendChild(card);
             });
@@ -786,33 +440,15 @@
             currentArticle = articles.find(a => a.id === articleId);
             if (!currentArticle) return;
             
-            incrementViews(articleId);
-            
             document.getElementById('articlesListPage').classList.add('hidden');
             document.getElementById('articleDetailPage').classList.remove('hidden');
             
             const detailContainer = document.getElementById('articleDetail');
-            const avgRating = getAverageRating(articleId);
-            const views = articleViews[articleId] || 0;
-            const likes = articleLikes[articleId] || { count: 0, liked: false };
-            
             detailContainer.innerHTML = `
                 <div class="article-header">
                     <h1 class="article-detail-title">${currentArticle.title}</h1>
                     <div class="article-meta">
                         نویسنده: ${currentArticle.author} | تاریخ انتشار: ${currentArticle.date}
-                    </div>
-                    <div class="article-stats">
-                        <div class="stat-item">
-                            <div class="star-rating">${renderStars(Math.round(avgRating))}</div>
-                            <span>${avgRating > 0 ? avgRating : 'بدون امتیاز'}</span>
-                        </div>
-                        <div class="stat-item">
-                            👁️ ${views} بازدید
-                        </div>
-                        <div class="stat-item">
-                            ❤️ ${likes.count} لایک
-                        </div>
                     </div>
                 </div>
                 <img src="${currentArticle.image}" alt="${currentArticle.title}" class="article-featured-image" onerror="this.style.display='none';">
@@ -821,133 +457,17 @@
                 </div>
             `;
             
-            renderComments();
-            setupRatingStars();
             window.scrollTo(0, 0);
-        }
-
-        function setupRatingStars() {
-            const stars = document.querySelectorAll('.rating-star');
-            stars.forEach(star => {
-                star.addEventListener('click', () => {
-                    selectedRating = parseInt(star.dataset.rating);
-                    updateRatingStars();
-                });
-                
-                star.addEventListener('mouseenter', () => {
-                    const rating = parseInt(star.dataset.rating);
-                    stars.forEach((s, index) => {
-                        if (index < rating) {
-                            s.classList.add('active');
-                        } else {
-                            s.classList.remove('active');
-                        }
-                    });
-                });
-            });
-            
-            document.getElementById('ratingStars').addEventListener('mouseleave', updateRatingStars);
-        }
-
-        function updateRatingStars() {
-            const stars = document.querySelectorAll('.rating-star');
-            stars.forEach((star, index) => {
-                if (index < selectedRating) {
-                    star.classList.add('active');
-                } else {
-                    star.classList.remove('active');
-                }
-            });
-        }
-
-        function renderComments() {
-            const commentsList = document.getElementById('commentsList');
-            const articleComments = allComments.filter(c => c.article_id === currentArticle.id);
-            
-            if (articleComments.length === 0) {
-                commentsList.innerHTML = '<p class="loading-message">هنوز نظری ثبت نشده است. اولین نفر باشید!</p>';
-                return;
-            }
-            
-            commentsList.innerHTML = '';
-            articleComments.reverse().forEach(comment => {
-                const commentDiv = document.createElement('div');
-                commentDiv.className = 'comment-item';
-                
-                const date = new Date(comment.created_at);
-                const dateStr = date.toLocaleDateString('fa-IR');
-                
-                commentDiv.innerHTML = `
-                    <div class="comment-header">
-                        <span class="comment-author">${comment.author_name}</span>
-                        <span class="comment-date">${dateStr}</span>
-                    </div>
-                    ${comment.rating > 0 ? `<div class="comment-rating">${renderStars(comment.rating)}</div>` : ''}
-                    <p class="comment-text">${comment.comment_text}</p>
-                `;
-                
-                commentsList.appendChild(commentDiv);
-            });
         }
 
         function showArticlesList() {
             document.getElementById('articleDetailPage').classList.add('hidden');
             document.getElementById('articlesListPage').classList.remove('hidden');
             currentArticle = null;
-            selectedRating = 0;
-            document.getElementById('commentForm').reset();
-            document.getElementById('formError').classList.add('hidden');
             window.scrollTo(0, 0);
         }
 
         document.getElementById('backButton').addEventListener('click', showArticlesList);
-
-        document.getElementById('commentForm').addEventListener('submit', async (e) => {
-            e.preventDefault();
-            
-            if (!currentArticle) return;
-            
-            const authorName = document.getElementById('authorName').value.trim();
-            const commentText = document.getElementById('commentText').value.trim();
-            const errorDiv = document.getElementById('formError');
-            const submitButton = document.getElementById('submitButton');
-            
-            if (!authorName || !commentText) {
-                errorDiv.textContent = 'لطفاً تمام فیلدها را پر کنید.';
-                errorDiv.classList.remove('hidden');
-                return;
-            }
-            
-            errorDiv.classList.add('hidden');
-            submitButton.disabled = true;
-            submitButton.textContent = 'در حال ارسال...';
-            
-            const newComment = {
-                article_id: currentArticle.id,
-                author_name: authorName,
-                comment_text: commentText,
-                rating: selectedRating,
-                created_at: new Date().toISOString()
-            };
-            
-            const result = await window.dataSdk.create(newComment);
-            
-            if (result.isOk) {
-                document.getElementById('commentForm').reset();
-                selectedRating = 0;
-                updateRatingStars();
-                submitButton.textContent = 'نظر شما با موفقیت ثبت شد!';
-                setTimeout(() => {
-                    submitButton.textContent = 'ارسال نظر';
-                    submitButton.disabled = false;
-                }, 2000);
-            } else {
-                errorDiv.textContent = 'خطا در ارسال نظر. لطفاً دوباره تلاش کنید.';
-                errorDiv.classList.remove('hidden');
-                submitButton.disabled = false;
-                submitButton.textContent = 'ارسال نظر';
-            }
-        });
 
         async function onConfigChange(config) {
             document.getElementById('siteTitle').textContent = config.site_title || defaultConfig.site_title;
@@ -960,118 +480,64 @@
             document.querySelector('.about-section').style.backgroundColor = config.surface_color || defaultConfig.surface_color;
             document.querySelector('footer').style.backgroundColor = config.primary_action_color || defaultConfig.primary_action_color;
             
-            document.querySelectorAll('.site-title, .about-title, .page-title, .article-card-title, .article-detail-title, .comments-title, .rating-title').forEach(el => {
+            document.querySelectorAll('.site-title, .about-title, .page-title, .article-card-title, .article-detail-title').forEach(el => {
                 el.style.color = config.text_color || defaultConfig.text_color;
             });
             
-            document.querySelectorAll('.back-button, .submit-button').forEach(el => {
+            document.querySelectorAll('.back-button').forEach(el => {
                 el.style.backgroundColor = config.primary_action_color || defaultConfig.primary_action_color;
             });
         }
 
-        const dataHandler = {
-            onDataChanged(data) {
-                allComments = data;
-                if (currentArticle) {
-                    renderComments();
-                    
-                    // Update article detail stats
-                    const avgRating = getAverageRating(currentArticle.id);
-                    const detailContainer = document.getElementById('articleDetail');
-                    const statsDiv = detailContainer.querySelector('.article-stats');
-                    if (statsDiv) {
-                        const views = articleViews[currentArticle.id] || 0;
-                        const likes = articleLikes[currentArticle.id] || { count: 0, liked: false };
-                        statsDiv.innerHTML = `
-                            <div class="stat-item">
-                                <div class="star-rating">${renderStars(Math.round(avgRating))}</div>
-                                <span>${avgRating > 0 ? avgRating : 'بدون امتیاز'}</span>
-                            </div>
-                            <div class="stat-item">
-                                👁️ ${views} بازدید
-                            </div>
-                            <div class="stat-item">
-                                ❤️ ${likes.count} لایک
-                            </div>
-                        `;
-                    }
-                }
-                renderArticlesList();
-            }
-        };
-
-        async function initializeApp() {
-            initializeStats();
-            renderArticlesList();
-            
-            // Initialize Data SDK first
-            if (window.dataSdk) {
-                const initResult = await window.dataSdk.init(dataHandler);
-                if (!initResult.isOk) {
-                    const errorDiv = document.getElementById('formError');
-                    if (errorDiv) {
-                        errorDiv.textContent = 'خطا در بارگذاری سیستم نظرات';
-                        errorDiv.classList.remove('hidden');
-                    }
-                }
-            }
-            
-            // Initialize Element SDK
-            if (window.elementSdk) {
-                await window.elementSdk.init({
-                    defaultConfig: defaultConfig,
-                    onConfigChange: onConfigChange,
-                    mapToCapabilities: (config) => ({
-                        recolorables: [
-                            {
-                                get: () => config.background_color || defaultConfig.background_color,
-                                set: (value) => {
-                                    config.background_color = value;
-                                    window.elementSdk.setConfig({ background_color: value });
-                                }
-                            },
-                            {
-                                get: () => config.surface_color || defaultConfig.surface_color,
-                                set: (value) => {
-                                    config.surface_color = value;
-                                    window.elementSdk.setConfig({ surface_color: value });
-                                }
-                            },
-                            {
-                                get: () => config.text_color || defaultConfig.text_color,
-                                set: (value) => {
-                                    config.text_color = value;
-                                    window.elementSdk.setConfig({ text_color: value });
-                                }
-                            },
-                            {
-                                get: () => config.primary_action_color || defaultConfig.primary_action_color,
-                                set: (value) => {
-                                    config.primary_action_color = value;
-                                    window.elementSdk.setConfig({ primary_action_color: value });
-                                }
+        if (window.elementSdk) {
+            window.elementSdk.init({
+                defaultConfig: defaultConfig,
+                onConfigChange: onConfigChange,
+                mapToCapabilities: (config) => ({
+                    recolorables: [
+                        {
+                            get: () => config.background_color || defaultConfig.background_color,
+                            set: (value) => {
+                                config.background_color = value;
+                                window.elementSdk.setConfig({ background_color: value });
                             }
-                        ],
-                        borderables: [],
-                        fontEditable: undefined,
-                        fontSizeable: undefined
-                    }),
-                    mapToEditPanelValues: (config) => new Map([
-                        ["site_title", config.site_title || defaultConfig.site_title],
-                        ["about_title", config.about_title || defaultConfig.about_title],
-                        ["about_description", config.about_description || defaultConfig.about_description],
-                        ["footer_text", config.footer_text || defaultConfig.footer_text]
-                    ])
-                });
-            }
+                        },
+                        {
+                            get: () => config.surface_color || defaultConfig.surface_color,
+                            set: (value) => {
+                                config.surface_color = value;
+                                window.elementSdk.setConfig({ surface_color: value });
+                            }
+                        },
+                        {
+                            get: () => config.text_color || defaultConfig.text_color,
+                            set: (value) => {
+                                config.text_color = value;
+                                window.elementSdk.setConfig({ text_color: value });
+                            }
+                        },
+                        {
+                            get: () => config.primary_action_color || defaultConfig.primary_action_color,
+                            set: (value) => {
+                                config.primary_action_color = value;
+                                window.elementSdk.setConfig({ primary_action_color: value });
+                            }
+                        }
+                    ],
+                    borderables: [],
+                    fontEditable: undefined,
+                    fontSizeable: undefined
+                }),
+                mapToEditPanelValues: (config) => new Map([
+                    ["site_title", config.site_title || defaultConfig.site_title],
+                    ["about_title", config.about_title || defaultConfig.about_title],
+                    ["about_description", config.about_description || defaultConfig.about_description],
+                    ["footer_text", config.footer_text || defaultConfig.footer_text]
+                ])
+            });
         }
 
-        // Wait for DOM to be ready
-        if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', initializeApp);
-        } else {
-            initializeApp();
-        }
+        renderArticlesList();
     </script>
- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'99d86c97504fdcb2',t:'MTc2Mjk3NTYxOS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'99d8558cc11e1e3e',t:'MTc2Mjk3NDY3Ni4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
