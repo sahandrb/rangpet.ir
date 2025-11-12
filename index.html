@@ -1001,6 +1001,108 @@ nav, .nav-container {
 .featured-article, .articles-grid, .footer-content {
   overflow-x: hidden;
 }
+   /* ==== اصلاح نهایی ساختار ریسپانسیو و فضای سفید در موبایل ==== */
+
+/* جلوگیری کامل از اسکرول افقی */
+html, body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* تصحیح جهت padding در RTL */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  direction: rtl;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* جلوگیری از بیرون‌زدگی عناصر */
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+/* تصحیح ساختار grid دو ستونه با RTL */
+.content-with-sidebar {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 40px;
+}
+
+@media (max-width: 968px) {
+  .content-with-sidebar {
+    grid-template-columns: 1fr !important;
+    gap: 0 !important;
+  }
+  .sidebar {
+    position: static !important;
+    width: 100% !important;
+  }
+}
+
+/* رفع فضای خالی ناشی از RTL در مرورگرها */
+body, .container, .content-with-sidebar, nav, header, footer {
+  direction: rtl;
+  text-align: right;
+}
+
+/* اصلاح ناوبری در موبایل */
+.nav-container {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  justify-content: flex-start;
+}
+
+.nav-item {
+  flex-shrink: 0;
+  padding: 12px 18px;
+  white-space: nowrap;
+}
+
+/* اطمینان از هم‌راستایی منو */
+nav {
+  overflow-x: hidden;
+  border-left: none;
+  border-right: none;
+}
+
+/* کنترل تصاویر */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* جلوگیری از فضای اضافی در featured-section */
+.featured-article {
+  grid-template-columns: 1fr;
+  overflow: hidden;
+}
+
+/* در موبایل کوچک‌تر از 768px */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 10px !important;
+  }
+  .featured-content {
+    padding: 20px;
+  }
+  .articles-grid {
+    grid-template-columns: 1fr !important;
+    gap: 15px !important;
+  }
+  footer {
+    text-align: center;
+  }
+}
+
 
   </style>
   <style>@view-transition { navigation: auto; }</style>
